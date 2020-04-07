@@ -1,9 +1,10 @@
 /* eslint-disable */
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import home from '@/views/home'
-
+import classs from '@/views/classs'
+import find from '@/views/find'
+import my from '@/views/my'
 Vue.use(Router)
 
 export default new Router({
@@ -13,10 +14,20 @@ export default new Router({
       name: 'home',
       component: home
     },
-    {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+   {
+     path: '/classs',
+     name: 'classs',
+     component: classs
+   },
+	 {
+	   path: '/find',
+	   name: 'find',
+	   component: find
+	 },
+	 {
+	   path: '/my',
+	   name: 'my',
+	   component: my,
+	   }
   ]
 })

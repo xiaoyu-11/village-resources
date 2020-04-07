@@ -113,10 +113,12 @@
 				</div>
 			</div>
 		</div>
+		 <myfooter></myfooter>
 	</div>
 </template>
 
 <script>
+	 import myfooter from '@/components/myfooter'
 export default {
 	data(){
 		return{
@@ -187,6 +189,9 @@ export default {
 			this.active2 = index
 			console.log(index)
 		}
+	},
+	 components: {
+	    myfooter
 	}
 
 }
